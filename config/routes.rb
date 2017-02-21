@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
    root 'galleries#index'
+   resources :galleries, only: [:index, :show]
 
+   #get 'galleries',  'galleries#index', as: 'galleries'
+   #get 'galleries/:id', ''
   namespace :admin do
     resources :galleries
   end

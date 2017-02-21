@@ -16,3 +16,518 @@ Migrating to CreateGalleries (20170221141159)
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `galleries`[0m
   [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'galleries'[0m
+Started GET "/" for ::1 at 2017-02-21 15:26:03 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (161.4ms)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_gallery_path' for #<#<Class:0x0055f20bf03b30>:0x007fc6188ad2f8>
+Did you mean?  new_admin_gallery_path):
+    26: 
+    27: <br>
+    28: 
+    29: <%= link_to 'New Gallery', new_gallery_path %>
+  
+app/views/galleries/index.html.erb:29:in `_app_views_galleries_index_html_erb___2881216098415037030_70244395976260'
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.2ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.9ms)
+Started GET "/" for ::1 at 2017-02-21 15:27:55 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (122.0ms)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_gallery_path' for #<#<Class:0x0055f20bf03b30>:0x007fc618ddcd28>
+Did you mean?  new_admin_gallery_path):
+    26: 
+    27: <br>
+    28: 
+    29: <%= link_to 'New Gallery', new_gallery_path %>
+  
+app/views/galleries/index.html.erb:29:in `_app_views_galleries_index_html_erb___2881216098415037030_70244398721940'
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.6ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.0ms)
+Started GET "/" for ::1 at 2017-02-21 15:28:52 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.4ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1620ms (Views: 1618.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-02-21 15:40:40 +0100
+  
+SyntaxError (/home/loic/Musee/config/routes.rb:3: syntax error, unexpected ':', expecting keyword_end
+   resources: galleries, only: [:index, :sh
+             ^
+/home/loic/Musee/config/routes.rb:11: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:3: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:11: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
+Started GET "/" for ::1 at 2017-02-21 15:43:56 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-02-21 15:43:57 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-21 15:43:58 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.4ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gallery" for ::1 at 2017-02-21 16:21:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/gallery"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [11 times] (4.2ms)
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.1ms)
+Started GET "/galleries" for ::1 at 2017-02-21 16:21:10 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:24:16 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/galleries/new" for ::1 at 2017-02-21 16:24:24 +0100
+Processing by Admin::GalleriesController#new as HTML
+  Rendering admin/galleries/new.html.erb within layouts/application
+  Rendered admin/galleries/_form.html.erb (99.1ms)
+  Rendered admin/galleries/new.html.erb within layouts/application (100.5ms)
+Completed 200 OK in 132ms (Views: 123.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:25:00 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.4ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/admin/galleries" for ::1 at 2017-02-21 16:50:41 +0100
+Processing by Admin::GalleriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ipAg2UQCqOhlIZWglPNv2TJTzzxFJM/RmhdYAUA0C/iPju4ia8a66+jDXTDOaj8/RJBr0C0CUhyS3CmojfDVVQ==", "gallery"=>{"name"=>"chat", "published"=>"1"}, "commit"=>"Create Gallery"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `galleries` (`name`, `published`, `created_at`, `updated_at`) VALUES ('chat', 1, '2017-02-21 15:50:41', '2017-02-21 15:50:41')[0m
+  [1m[35m (118.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/galleries/1
+Completed 302 Found in 123ms (ActiveRecord: 118.5ms)
+
+
+Started GET "/admin/galleries/1" for ::1 at 2017-02-21 16:50:42 +0100
+Processing by Admin::GalleriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGallery Load (0.7ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 1 LIMIT 1[0m
+  Rendering admin/galleries/show.html.erb within layouts/application
+  Rendered admin/galleries/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 17.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:50:47 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/admin/galleries/1" for ::1 at 2017-02-21 16:50:50 +0100
+Processing by Admin::GalleriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4cHE8cx0LM98XmRS5zitQeSSMwdqe+7JkSgdQtb+bNZu/Re4WEbg1rY1CF3IGx38tvmSHTzLr2ReA4D33+d/Gg==", "id"=>"1"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM `galleries` WHERE `galleries`.`id` = 1[0m
+  [1m[35m (68.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/galleries
+Completed 302 Found in 74ms (ActiveRecord: 69.0ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:50:50 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/galleries/new" for ::1 at 2017-02-21 16:50:56 +0100
+Processing by Admin::GalleriesController#new as HTML
+  Rendering admin/galleries/new.html.erb within layouts/application
+  Rendered admin/galleries/_form.html.erb (2.7ms)
+  Rendered admin/galleries/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/galleries" for ::1 at 2017-02-21 16:51:10 +0100
+Processing by Admin::GalleriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W0n0SvRsR4zilKraHLsWhG9AmrhEEbG1SBRJX+Pgl19eVzqx26hVj292YkpGIkZiGYM+VCw3LHhA3zj2LiRJ8g==", "gallery"=>{"name"=>"Tauveron", "published"=>"1"}, "commit"=>"Create Gallery"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `galleries` (`name`, `published`, `created_at`, `updated_at`) VALUES ('Tauveron', 1, '2017-02-21 15:51:10', '2017-02-21 15:51:10')[0m
+  [1m[35m (103.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/galleries/2
+Completed 302 Found in 108ms (ActiveRecord: 103.5ms)
+
+
+Started GET "/admin/galleries/2" for ::1 at 2017-02-21 16:51:10 +0100
+Processing by Admin::GalleriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 2 LIMIT 1[0m
+  Rendering admin/galleries/show.html.erb within layouts/application
+  Rendered admin/galleries/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/galleries/2/edit" for ::1 at 2017-02-21 16:51:13 +0100
+Processing by Admin::GalleriesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGallery Load (0.4ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 2 LIMIT 1[0m
+  Rendering admin/galleries/edit.html.erb within layouts/application
+  Rendered admin/galleries/_form.html.erb (3.5ms)
+  Rendered admin/galleries/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/admin/galleries/2" for ::1 at 2017-02-21 16:51:16 +0100
+Processing by Admin::GalleriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mq6DJv/37EhZSvcwmeGcjPpLm4MEf9Ap3fzecZuO7V9zfDKG79zGxYk94frAKSXhoISzCL6xmZhOTvSxdE5mdA==", "gallery"=>{"name"=>"Tauveron", "published"=>"1"}, "commit"=>"Update Gallery", "id"=>"2"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/galleries/2
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/galleries/2" for ::1 at 2017-02-21 16:51:16 +0100
+Processing by Admin::GalleriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 2 LIMIT 1[0m
+  Rendering admin/galleries/show.html.erb within layouts/application
+  Rendered admin/galleries/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:51:20 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/admin/galleries/2" for ::1 at 2017-02-21 16:51:23 +0100
+Processing by Admin::GalleriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KsYbRrxb36wOo4dr4vPicr0bpEamWQ8v4wVcARWXTKml+sgPKGkTtcTI62TN0FLP73AFXPDpToIsLsG0HI5fZQ==", "id"=>"2"}
+  [1m[36mGallery Load (0.4ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM `galleries` WHERE `galleries`.`id` = 2[0m
+  [1m[35m (66.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/galleries
+Completed 302 Found in 70ms (ActiveRecord: 66.9ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:51:23 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/admin/galleries/2" for ::1 at 2017-02-21 16:51:28 +0100
+Processing by Admin::GalleriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KsYbRrxb36wOo4dr4vPicr0bpEamWQ8v4wVcARWXTKml+sgPKGkTtcTI62TN0FLP73AFXPDpToIsLsG0HI5fZQ==", "id"=>"2"}
+  [1m[36mGallery Load (0.4ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 2 LIMIT 1[0m
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gallery with 'id'=2):
+  
+app/controllers/admin/galleries_controller.rb:67:in `set_gallery'
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.8ms)
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:53:18 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 41ms (Views: 28.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:53:26 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/admin/galleries/2" for ::1 at 2017-02-21 16:53:34 +0100
+Processing by Admin::GalleriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KsYbRrxb36wOo4dr4vPicr0bpEamWQ8v4wVcARWXTKml+sgPKGkTtcTI62TN0FLP73AFXPDpToIsLsG0HI5fZQ==", "id"=>"2"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 2 LIMIT 1[0m
+Completed 404 Not Found in 4ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gallery with 'id'=2):
+  
+app/controllers/admin/galleries_controller.rb:67:in `set_gallery'
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.5ms)
+Started GET "/admin/galleries/2" for ::1 at 2017-02-21 16:53:41 +0100
+Processing by Admin::GalleriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 2 LIMIT 1[0m
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gallery with 'id'=2):
+  
+app/controllers/admin/galleries_controller.rb:67:in `set_gallery'
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+Started GET "/admin/galleries/2" for ::1 at 2017-02-21 16:53:43 +0100
+Processing by Admin::GalleriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 2 LIMIT 1[0m
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gallery with 'id'=2):
+  
+app/controllers/admin/galleries_controller.rb:67:in `set_gallery'
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/loic/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.4ms)
+Started GET "/" for ::1 at 2017-02-21 16:53:46 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:53:56 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/galleries/new" for ::1 at 2017-02-21 16:53:58 +0100
+Processing by Admin::GalleriesController#new as HTML
+  Rendering admin/galleries/new.html.erb within layouts/application
+  Rendered admin/galleries/_form.html.erb (3.7ms)
+  Rendered admin/galleries/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/galleries" for ::1 at 2017-02-21 16:55:25 +0100
+Processing by Admin::GalleriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oax7BnSerjW7qciQ7o85nvYLdTsU5VU9IjewTijPKOCksrX9W1q8NjZLAAC0Fml4gMjR13zDyPAq/MHn5Qv2TQ==", "gallery"=>{"name"=>"loic", "published"=>"1"}, "commit"=>"Create Gallery"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `galleries` (`name`, `published`, `created_at`, `updated_at`) VALUES ('loic', 1, '2017-02-21 15:55:25', '2017-02-21 15:55:25')[0m
+  [1m[35m (104.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/galleries/3
+Completed 302 Found in 109ms (ActiveRecord: 105.2ms)
+
+
+Started GET "/admin/galleries/3" for ::1 at 2017-02-21 16:55:25 +0100
+Processing by Admin::GalleriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 3 LIMIT 1[0m
+  Rendering admin/galleries/show.html.erb within layouts/application
+  Rendered admin/galleries/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/galleries/new" for ::1 at 2017-02-21 16:55:41 +0100
+Processing by Admin::GalleriesController#new as HTML
+  Rendering admin/galleries/new.html.erb within layouts/application
+  Rendered admin/galleries/_form.html.erb (3.6ms)
+  Rendered admin/galleries/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/galleries" for ::1 at 2017-02-21 16:55:49 +0100
+Processing by Admin::GalleriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Mk7ipZdgxYFJPtd9ESCxgtSajdE+z972yg9u7DAw7HV1/VxuZmRFYjGM82u3dIgfZHO2yzdorbT40wSfQQdHA==", "gallery"=>{"name"=>"loic", "published"=>"1"}, "commit"=>"Create Gallery"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `galleries` (`name`, `published`, `created_at`, `updated_at`) VALUES ('loic', 1, '2017-02-21 15:55:49', '2017-02-21 15:55:49')[0m
+  [1m[35m (179.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/galleries/4
+Completed 302 Found in 183ms (ActiveRecord: 179.4ms)
+
+
+Started GET "/admin/galleries/4" for ::1 at 2017-02-21 16:55:50 +0100
+Processing by Admin::GalleriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 4 LIMIT 1[0m
+  Rendering admin/galleries/show.html.erb within layouts/application
+  Rendered admin/galleries/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:55:53 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/admin/galleries/3" for ::1 at 2017-02-21 16:55:58 +0100
+Processing by Admin::GalleriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RQSRQn+ydWCPCB8f+5Wtz+E6oNPSyLrjOS1N6dJYmX3KOEIL64C5eUVjcxDUth1ys1EByYR4+072BtBc20GKsQ==", "id"=>"3"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `galleries` WHERE `galleries`.`id` = 3[0m
+  [1m[35m (46.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/galleries
+Completed 302 Found in 50ms (ActiveRecord: 46.8ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:55:58 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/admin/galleries/4" for ::1 at 2017-02-21 16:56:00 +0100
+Processing by Admin::GalleriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"U1yW9IA9i7DIET4FdkKzxgKA0UTPvnMEPOaT9Z5EIpHcYEW9FA9HqQJ6UgpZYQN7UOtwXpkOMqnzzQ5Al10xXQ==", "id"=>"4"}
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT  `galleries`.* FROM `galleries` WHERE `galleries`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM `galleries` WHERE `galleries`.`id` = 4[0m
+  [1m[35m (61.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/galleries
+Completed 302 Found in 65ms (ActiveRecord: 62.4ms)
+
+
+Started GET "/admin/galleries" for ::1 at 2017-02-21 16:56:00 +0100
+Processing by Admin::GalleriesController#index as HTML
+  Rendering admin/galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered admin/galleries/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/galleries" for ::1 at 2017-02-21 16:56:27 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.3ms)
+
+
